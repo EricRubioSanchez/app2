@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('article',50);
-            $table->bigInteger('id_usuari');
+            $table->bigInteger('id_usuari')->nullable();
             $table->timestamps();
         });
 

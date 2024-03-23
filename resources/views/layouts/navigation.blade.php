@@ -16,6 +16,21 @@
                         {{ __('Articles') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('inserir')" :active="request()->routeIs('inserir')">
+                        {{ __('Inserir') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('modificar')" :active="request()->routeIs('modificar')">
+                        {{ __('Modificar') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('eliminar')" :active="request()->routeIs('eliminar')">
+                        {{ __('Eliminar') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
