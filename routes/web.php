@@ -37,7 +37,7 @@ Route::post('modificar', [InserirController::class, 'update']);
 Route::post('eliminar', [InserirController::class, 'delete']);
 
 Route::get('/dashboard',[ArticlesController::class,'show'])->middleware(['auth', 'verified'])->name('dashboard');
-
+ 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

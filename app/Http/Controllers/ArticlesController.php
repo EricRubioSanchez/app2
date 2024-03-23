@@ -11,7 +11,7 @@ class ArticlesController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    { 
         //
         $articles = articles::latest()->paginate(2);
         //return view('welcome');
