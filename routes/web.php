@@ -35,7 +35,7 @@ Route::get('/modificar', function () {return view('modificar');})->name('modific
 Route::post('inserir', [InserirController::class, 'store']);
 Route::post('modificar', [InserirController::class, 'update']);
 Route::post('eliminar', [InserirController::class, 'delete']);
-
+ 
 Route::get('/dashboard',[ArticlesController::class,'show'])->middleware(['auth', 'verified'])->name('dashboard');
  
 Route::middleware('auth')->group(function () {

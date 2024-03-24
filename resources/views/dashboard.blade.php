@@ -20,4 +20,4 @@
                 @endforelse
             </ul>
             {{ $articles->links() }}
-</x-app-layout>
+</x-app-layout> 

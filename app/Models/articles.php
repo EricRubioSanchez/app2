@@ -16,5 +16,5 @@ class articles extends Model
     protected $fillable = [
         'article',
         'id_usuari',
-    ];
+    ]; 
 }
