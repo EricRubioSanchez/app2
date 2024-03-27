@@ -26,7 +26,7 @@ class InserirController extends Controller
      * Store a newly created resource in storage.
      */
     public function store()
-    {
+    { 
         //
         request()->validate([
             'email' => ['required', 'string', 'max:255'],

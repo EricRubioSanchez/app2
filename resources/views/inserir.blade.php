@@ -6,7 +6,7 @@
     </x-slot>
     <form method="POST" action="{{ route('inserir') }}">
         @csrf
-
+ 
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Article')" />

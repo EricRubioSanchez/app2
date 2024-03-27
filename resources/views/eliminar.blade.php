@@ -16,7 +16,7 @@
 
         <div class="flex items-center justify-end mt-4">
 
-
+ 
             <x-primary-button class="ms-3">
                 {{ __('Eliminar') }}
             </x-primary-button>
