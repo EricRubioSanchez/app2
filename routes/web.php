@@ -31,7 +31,7 @@ Route::apiResource('/',ArticlesController::class);
 Route::get('/inserir', function () {return view('inserir');})->name('inserir');
 Route::get('/eliminar', function () {return view('eliminar');})->name('eliminar');
 Route::get('/modificar', function () {return view('modificar');})->name('modificar');
-
+ 
 Route::post('inserir', [InserirController::class, 'store']);
 Route::post('modificar', [InserirController::class, 'update']);
 Route::post('eliminar', [InserirController::class, 'delete']);

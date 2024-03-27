@@ -16,7 +16,7 @@
                     </div>
                 </li>
                 @empty
-                <li>Cap article a mostrar!!!</li>
+                <li>Cap article a mostrar!!!</li> 
                 @endforelse
             </ul>
             {{ $articles->links() }}
