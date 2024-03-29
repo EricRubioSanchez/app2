@@ -35,7 +35,7 @@ class InserirController extends Controller
         articles::create([
             'article' => request()->email
         ]);
-
+ 
 
         return redirect(RouteServiceProvider::HOME);
     }
